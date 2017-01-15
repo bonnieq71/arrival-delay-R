@@ -119,7 +119,9 @@ So what I've learned is to at least try to avoid taking the risk on Friday and S
 
 But this is number of delayed flights. This doesn't take into account the total number of flights. Maybe there is an increase in the total number of delayed flights because there are more flights in general during those times of year, so in actuality, the proportion of delayed flights is the same?
 
-So blue = percent of flights on time (arrived with a less than 15 minute delay). To me, this is enough time to find the other terminal and make the other connecting flight) red = percent of flights with arrival delay more than 2 hours. Most likely would've missed that flight <img src="2016_12_10_flights_analysis_clean_2_files/figure-markdown_github/unnamed-chunk-9-1.png" style="display: block; margin: auto;" /><img src="2016_12_10_flights_analysis_clean_2_files/figure-markdown_github/unnamed-chunk-9-2.png" style="display: block; margin: auto;" />
+So blue = percent of flights on time (arrived with a less than 15 minute delay). To me, this is enough time to find the other terminal and make the other connecting flight) red = percent of flights with arrival delay more than 2 hours. Most likely would've missed that flight
+
+<img src="2016_12_10_flights_analysis_clean_2_files/figure-markdown_github/unnamed-chunk-9-1.png" style="display: block; margin: auto;" /><img src="2016_12_10_flights_analysis_clean_2_files/figure-markdown_github/unnamed-chunk-9-2.png" style="display: block; margin: auto;" />
 
 Looks like in the spring and fall, I will have a higher chance of arriving on time and making my connecting flight comfortably. Taking a closer look at the flights that are delayed more than 2 hours, yes Summer and December holidays increase the percent of delayed flights, but the difference is of about 2%. Maybe this isn't actually significant. So to me, seems like the chances of missing my connection is very low but chances of my plane arriving on time can differ by 20%!
 

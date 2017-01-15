@@ -127,6 +127,8 @@ But this is number of delayed flights. This doesn't take into account the total 
 
 So blue = percent of flights on time (arrived with a less than 15 minute delay). To me, this is enough time to find the other terminal and make the other connecting flight)
 red = percent of flights with arrival delay more than 2 hours. Most likely would've missed that flight
+
+
 ```{r echo = FALSE, fig.height=4, fig.width=6, fig.align="center"}
 flights_ontime <- flights_orig[which(flights_orig$ArrDelay < 15),]
 
@@ -168,11 +170,15 @@ percent_day <- data.frame(day, percent_day_ontime, percent_day_delay, row.names 
 percent_week <- data.frame(week, percent_week_ontime, percent_week_delay, row.names = TRUE)
 
 percent_plot_1 <- ggplot(percent_month, aes(x=month)) + geom_point(aes(y = percent_month_ontime), color = 'blue', size = 3, alpha = 0.5) + geom_point(aes(y= percent_month_delay), color = 'red', size = 3, alpha = 0.5) + scale_y_continuous(labels=percent) + labs(x = "Month", y = "Percent of total flights", title = "Percent of flights that arrive on time or >2 hours late ") + scale_x_discrete(limits = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")) + geom_text(x = 2, y = 0.60, label = "Arriving on time", size = 5, family = "Times New Roman", color = "blue") + geom_text(x = 2, y = 0.1, label = "Missed connection", size = 5, family = "Times New Roman", color = "red")
+
+
 percent_plot_1
   
   
 # Because it's hard to see what's going on with the delayed flights
 percent_plot_2 <- ggplot(percent_month, aes(x=month)) + geom_point(aes(y= percent_month_delay), color = 'red', size = 3, alpha = 0.5) + scale_y_continuous(labels=percent) + labs(x = "Month", y = "Percent of total flights", title = "Closer look at flights that are delayed more than 2 hours") + scale_x_discrete(limits = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))
+
+
 percent_plot_2
 ```
 
