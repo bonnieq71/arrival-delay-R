@@ -2,8 +2,7 @@
 tatitle: "practice"
 author: "Bonnie"
 date: "December 10, 2016"
-output: html_document
-keep_md: true
+output: github_document
 ---
 
 ##My first data science project! 
